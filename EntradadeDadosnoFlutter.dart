@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
 }
 
 class TelaFormulario extends StatelessWidget {
-  // Controllers para os campos de texto
+
   TextEditingController txtnome = TextEditingController();
   TextEditingController txtidade = TextEditingController();
   TextEditingController txtemail = TextEditingController();
@@ -52,7 +52,7 @@ class TelaFormulario extends StatelessWidget {
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // Verificando se algum campo está vazio
+             
                   if (txtemail.text.isEmpty ||
                       txtidade.text.isEmpty ||
                       txtnome.text.isEmpty) {
@@ -74,7 +74,7 @@ class TelaFormulario extends StatelessWidget {
                       },
                     );
                   } else {
-                    // Caso todos os campos estejam preenchidos
+         
                     showDialog(
                       context: context,
                       builder: (BuildContext context) {
